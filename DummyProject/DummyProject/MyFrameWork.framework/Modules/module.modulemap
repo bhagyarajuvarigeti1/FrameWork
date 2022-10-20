@@ -1,0 +1,11 @@
+framework module MyFrameWork {
+  umbrella header "MyFrameWork.h"
+
+  export *
+  module * { export * }
+}
+
+module MyFrameWork.Swift {
+    header "MyFrameWork-Swift.h"
+    requires objc
+}
